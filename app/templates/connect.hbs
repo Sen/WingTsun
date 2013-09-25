@@ -1,0 +1,20 @@
+<form role="form" class="form-inline" id="connect" {{action connect on="submit"}}>
+  <h2>Connect to Redis</h2>
+  <div class="form-group">
+    {{input value=host class="form-control" type="text" placeholder="Host 0.0.0.0"}}
+  </div>
+  <div class="form-group">
+    {{input value=port class="form-control" type="text" placeholder="Port 6379"}}
+  </div>
+  <div class="form-group">
+    {{input class="btn btn-default" type="submit" value="Connect"}}
+  </div>
+  </div>
+</form>
+
+{{#if errorMessage}}
+  <div class="alert alert-danger">
+    {{errorMessage}}
+  </div>
+{{/if}}
+

@@ -1,0 +1,14 @@
+{
+  "name": "armoire-web",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "handlebars.js": "~v1.0.12",
+    "ember": "~1.0.0",
+    "ember-data-shim": "~1.0.0-beta.2",
+    "bootstrap-sass": "~3.0.0"
+  },
+  "devDependencies": {
+    "ember-mocha-adapter": "0.1.2"
+  }
+}

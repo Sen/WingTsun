@@ -1,2 +1,2 @@
-Armoire.ApplicationAdapter = DS.RESTAdapter.extend
+WingTsun.ApplicationAdapter = DS.RESTAdapter.extend
   namespace: 'api'

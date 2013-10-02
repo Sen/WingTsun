@@ -1,4 +1,4 @@
-Armoire = window.Armoire = Ember.Application.create()
+WingTsun = window.WingTsun = Ember.Application.create()
 
 # Order and include as you please.
 require 'scripts/controllers/*'

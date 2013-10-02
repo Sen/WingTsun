@@ -5,7 +5,7 @@ describe "Index page", ->
 
 describe "ApplicationRoute", ->
     describe "model property", ->
-        applicationRoute = Armoire.ApplicationRoute.create()
+        applicationRoute = WingTsun.ApplicationRoute.create()
 
         it "should have the right number of items", ->
             model = applicationRoute.model()

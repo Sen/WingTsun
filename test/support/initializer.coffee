@@ -5,12 +5,12 @@ should = chai.should()
 chai.Assertion.includeStack = true
 
 Ember.testing = true
-Armoire.rootElement = "#ember-testing"
+WingTsun.rootElement = "#ember-testing"
 Ember.Test.adapter = Ember.Test.MochaAdapter.create()
 
-Armoire.setupForTesting()
-Armoire.injectTestHelpers()
-Ember.run Armoire, Armoire.advanceReadiness
+WingTsun.setupForTesting()
+WingTsun.injectTestHelpers()
+Ember.run WingTsun, WingTsun.advanceReadiness
 
 window.start = ->
 window.stop = ->

@@ -1,4 +1,4 @@
-Armoire.ConnectController = Ember.Controller.extend
+WingTsun.ConnectController = Ember.Controller.extend
   reset: ->
     @setProperties host: '', port: '', errorMessage: ''
 

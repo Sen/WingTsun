@@ -1,6 +1,6 @@
-Armoire.ApplicationRoute = Ember.Route.extend()
+WingTsun.ApplicationRoute = Ember.Route.extend()
 
-Armoire.AuthenticatedRoute = Ember.Route.extend
+WingTsun.AuthenticatedRoute = Ember.Route.extend
   actions:
     error: (reason, transition) ->
       if reason.status == 401

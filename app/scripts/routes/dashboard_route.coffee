@@ -1,3 +1,3 @@
-Armoire.DashboardRoute = Armoire.AuthenticatedRoute.extend
+WingTsun.DashboardRoute = WingTsun.AuthenticatedRoute.extend
   model: ->
     $.getJSON('/api/redis')

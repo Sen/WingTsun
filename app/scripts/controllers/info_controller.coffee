@@ -1,7 +1,5 @@
 WingTsun.InfoController = Ember.Controller.extend
   infodata: (->
-    result = []
-    content = @get('content')
-    result.push({ name: key, value: content[key] }) for key of content
-    result
+    for key, value of @get('content')
+      { name: key, value: value }
   ).property('content')

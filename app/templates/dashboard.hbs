@@ -1,113 +1,16 @@
-redis_version: {{ redis_version }}
-<br />
-redis_git_sha1: {{ redis_git_sha1 }}
-<br />
-redis_git_dirty:  {{ redis_git_dirty }}
-<br />
-redis_mode:  {{ redis_mode }}
-<br />
-os: {{ os }}
-<br />
-arch_bits: {{ arch_bits }}
-<br />
-multiplexing_api: {{ multiplexing_api }}
-<br />
-gcc_version: {{ gcc_version }}
-<br />
-process_id: {{ process_id }}
-<br />
-run_id: {{ run_id }}
-<br />
-tcp_port: {{ tcp_port }}
-<br />
-uptime_in_seconds: {{ uptime_in_seconds }}
-<br />
-uptime_in_days: {{ uptime_in_days }}
-<br />
-lru_clock: {{ lru_clock }}
-<br />
-connected_clients: {{ connected_clients }}
-<br />
-client_longest_output_list: {{ client_longest_output_list }}
-<br />
-client_biggest_input_buf: {{ client_biggest_input_buf }}
-<br />
-blocked_clients: {{ blocked_clients }}
-<br />
-used_memory: {{ used_memory }}
-<br />
-used_memory_human: {{ used_memory_human }}
-<br />
-used_memory_rss: {{ used_memory_rss }}
-<br />
-used_memory_peak: {{ used_memory_peak }}
-<br />
-used_memory_peak_human: {{ used_memory_peak_human }}
-<br />
-used_memory_lua: {{ used_memory_lua }}
-<br />
-mem_fragmentation_ratio: {{ mem_fragmentation_ratio }}
-<br />
-mem_allocator: {{ mem_allocator }}
-<br />
-loading: {{ loading }}
-<br />
-rdb_changes_since_last_save: {{ rdb_changes_since_last_save }}
-<br />
-rdb_bgsave_in_progress: {{ rdb_bgsave_in_progress }}
-<br />
-rdb_last_save_time: {{ rdb_last_save_time }}
-<br />
-rdb_last_bgsave_status: {{ rdb_last_bgsave_status }}
-<br />
-rdb_last_bgsave_time_sec: {{ rdb_last_bgsave_time_sec }}
-<br />
-rdb_current_bgsave_time_sec: {{ rdb_current_bgsave_time_sec }}
-<br />
-aof_enabled: {{ aof_enabled }}
-<br />
-aof_rewrite_in_progress: {{ aof_rewrite_in_progress }}
-<br />
-aof_rewrite_scheduled: {{ aof_rewrite_scheduled }}
-<br />
-aof_last_rewrite_time_sec: {{ aof_last_rewrite_time_sec }}
-<br />
-aof_current_rewrite_time_sec: {{ aof_current_rewrite_time_sec }}
-<br />
-aof_last_bgrewrite_status: {{ aof_last_bgrewrite_status }}
-<br />
-total_connections_received: {{ total_connections_received }}
-<br />
-total_commands_processed: {{ total_commands_processed }}
-<br />
-instantaneous_ops_per_sec: {{ instantaneous_ops_per_sec }}
-<br />
-rejected_connections: {{ rejected_connections }}
-<br />
-expired_keys {{ expired_keys }}
-<br />
-evicted_keys: {{ evicted_keys }}
-<br />
-keyspace_hits: {{ keyspace_hits }}
-<br />
-keyspace_misses: {{ keyspace_misses }}
-<br />
-pubsub_channels: {{ pubsub_channels }}
-<br />
-pubsub_patterns: {{ pubsub_patterns }}
-<br />
-latest_fork_usec: {{ latest_fork_usec }}
-<br />
-role: {{ role }}
-<br />
-connected_slaves: {{ connected_slaves }}
-<br />
-used_cpu_sys: {{ used_cpu_sys }}
-<br />
-used_cpu_user: {{ used_cpu_user }}
-<br />
-used_cpu_sys_children; {{ used_cpu_sys_children }}
-<br />
-used_cpu_user_children: {{ used_cpu_user_children }}
-<br />
-db1: {{ db1 }}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Info Key</th>
+      <th>Info Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each infodata }}
+      <tr>
+        <td>{{ name }}</td>
+        <td>{{ value }}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,4 +1,6 @@
-WingTsun.ApplicationRoute = Ember.Route.extend()
+WingTsun.ApplicationRoute = Ember.Route.extend
+  redirect: ->
+    @transitionTo 'dashboard'
 
 WingTsun.AuthenticatedRoute = Ember.Route.extend
   actions:

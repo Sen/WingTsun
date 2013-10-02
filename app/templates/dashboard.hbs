@@ -1,1 +1,16 @@
-dashboard
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Info Key</th>
+      <th>Info Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each infodata }}
+      <tr>
+        <td>{{ name }}</td>
+        <td>{{ value }}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

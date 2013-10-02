@@ -1,3 +1,3 @@
 Armoire.DashboardRoute = Armoire.AuthenticatedRoute.extend
-  model: (params, transition) ->
+  model: ->
     $.getJSON('/api/redis')

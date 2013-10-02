@@ -1,4 +1,6 @@
-WingTsun = window.WingTsun = Ember.Application.create()
+WingTsun = window.WingTsun = Ember.Application.create
+  LOG_TRANSITIONS: true
+  LOG_TRANSITIONS_INTERNAL: true
 
 # Order and include as you please.
 require 'scripts/controllers/*'

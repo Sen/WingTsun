@@ -1,16 +1,14 @@
+{{partial 'dashboard.tabs'}}
+
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Info Key</th>
-      <th>Info Content</th>
+      <th>Name</th>
+      <th>Value</th>
     </tr>
   </thead>
+
   <tbody>
-    {{#each infodata }}
-      <tr>
-        <td>{{ name }}</td>
-        <td>{{ value }}</td>
-      </tr>
-    {{/each}}
+    {{outlet}}
   </tbody>
 </table>

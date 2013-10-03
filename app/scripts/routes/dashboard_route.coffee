@@ -3,9 +3,9 @@ WingTsun.DashboardBaseRoute = WingTsun.AuthenticatedRoute.extend
     type = @routeName.split('.')[1]
 
     if type == 'index'
-      $.getJSON('/api/redis')
+      $.getJSON('/api/info')
     else
-      $.getJSON('/api/redis/' + type)
+      $.getJSON('/api/info/' + type)
 
 WingTsun.DashboardIndexRoute       = WingTsun.DashboardBaseRoute.extend()
 WingTsun.DashboardServerRoute      = WingTsun.DashboardBaseRoute.extend()

@@ -9,6 +9,11 @@
   </thead>
 
   <tbody>
-    {{outlet}}
+    {{#each info }}
+      <tr>
+        <td>{{ name }}</td>
+        <td>{{ value }}</td>
+      </tr>
+    {{/each}}
   </tbody>
 </table>

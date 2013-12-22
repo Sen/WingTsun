@@ -1,3 +1,3 @@
 WingTsun.IndexRoute = Ember.Route.extend
   redirect: ->
-    @transitionTo 'dashboard'
+    @transitionTo 'dashboard', 'all'
